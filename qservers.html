@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qservers-Nigeria's Best Rated Web Host</title>
+    <link rel="stylesheet" href="qservers.css">
+    <link rel="shortcut icon" href="qservers logo.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=PT+Sans:ital,wght@0,700;1,400&family=Raleway:wght@100&family=Source+Sans+Pro:wght@200;300;400;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+</head>
+<body>
+
+    <div class="head">
+        <div class="partOne">
+            <div class="fb">
+                <img src="facebook.jpg" width="100%" alt="">
+            </div>
+              <div class="tweet">
+                <img src="twitter.png" width="100%" alt="">
+              </div>
+               <div class="IG">
+                <img src="IG2.png" width="100%" alt="">
+               </div>
+               <div class="linked">
+                <img src="linkedin.png" width="100%" alt="">
+               </div>
+        </div>
+       
+           <div class="partTwo">
+                <div class="cart">
+                    
+                        <span class="material-symbols-outlined">
+                            shopping_cart
+                            </span>
+                        <p><a href="">view cart (0)</a></p>
+                </div>
+
+                <div class="lifering">
+                    <!-- <img src="lifefring.png" width="10%" alt=""> -->
+                    <span class="material-symbols-outlined">
+                        support
+                        </span>
+                    <p><a href="">Submit Support Ticket</a></p>
+                </div>
+                <div class="pad">
+                    <button type="submit"><i class='bx bxs-lock-alt'></i>
+                        </span>Manage Account</button>
+                </div>
+           </div>
+    
+    
+        </div>
+        
+        <hr>
+
+    <div class="nav">
+        <div class="logo">
+            <img src="qservlogo2.png" alt="qservers logo">
+        </div>
+
+        <div class="menu">
+            <li><a href="">Home</a></li>
+            <li><a href="">Hosting</a></li>
+            <li><a href="">Domain Names</a></li>
+            <li><a href="">SSL</a></li>
+            <li><a href="">Affiliates</a></li>
+            <li><a href="">Support</a></li>
+              
+        </div>
+        
+    </div>
+
+    <!-- mobile-nav and head -->
+
+    <!-- <div class="mobile-head">
+        <div class="mobile-partOne">
+            <div class="mobile-fb">
+                <img src="facebook.jpg" width="100%" alt="">
+            </div>
+              <div class="mobile-tweet">
+                <img src="twitter.png" width="100%" alt="">
+              </div>
+               <div class="mobile-IG">
+                <img src="IG2.png" width="100%" alt="">
+               </div>
+               <div class="mobile-linked">
+                <img src="linkedin.png" width="100%" alt="">
+               </div>
+        </div>
+       
+           <div class="mobile-partTwo">
+                <div class="mobile-cart">
+                    
+                        <span class="material-symbols-outlined">
+                            shopping_cart
+                            </span>
+                        <p><a href="">view cart (0)</a></p>
+                </div>
+
+                <div class="mobile-lifering">
+                    <span class="material-symbols-outlined">
+                        support
+                        </span>
+                    <p><a href="">Submit Support Ticket</a></p>
+                </div>
+                <div class="mobile-pad">
+                    <button type="submit"><i class='bx bxs-lock-alt'></i>
+                        </span>Manage Account</button>
+                </div>
+           </div>
+    
+    
+        </div>
+        
+        <hr>
+
+    <div class="mobile-nav">
+        <div class="mobile-logo">
+            <img src="qservlogo2.png" alt="qservers logo">
+        </div>
+
+        <div class="hamburger">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAV1BMVEX///8AAADc3NyUlJT7+/s6Ojru7u5LS0uenp4lJSX39/fh4eFvb28ICAhTU1Otra3o6OjCwsK8vLw1NTWEhITR0dHKyspqampERESNjY0WFhanp6ciIiLxq9OpAAABpElEQVR4nO3dWVLjUAwF0NdxYzskJIxmCPtfJxgSSPPVP0JV8jkruKrYz5YrKrUGAAAAAAAAAPDL+mnsahmn/qy+zfZPRdvNqcBDdpQwh88Cu+wcgbq5wJvsFKFu3itcZ4cItW7tNjtDsNtW8xj9ti1+kc6XaXaCcO0qO0Gwq3aXHSHYXbvPjhDsvj1kRwj20NouO0Oo3dxYZIcI9dFeTNkpAk2fzcWq6lN/vfpqgfdDdpgAw/6fzxjXq2quAz72AAAAAAAAAAAAAP/vby0/quv3j8NFLcPj/myItOoEYnes7/IpO0mYp8uP+6/iP6BPhvl+fM5OEer5/ZDJzhCsb2N2hGBj8aGgeSzoJTtCsJcFzJDW/w3r34f1z9L6z8P67zQLeC+t31ssoD9cQo+/gO80AAAAAAAAAAAAwO+qvt+i+o6S1Wt2mCCvxz0z5XcF1d/3VHssaNcWsHet/u68+vsP6++wzE4QbgG7ZOvvA66/07n4ZbpuS9itXnb6cHacQDxk5whzODWIm5oH6nZz1uT309jVMk4/R0gBAAAAAAAAAMK9AX/vTEiQhKHCAAAAAElFTkSuQmCC" width="70%" alt="hamburger">
+
+        <div class="mobile-menu">
+            <li><a href="">Home</a></li>
+            <li><a href="">Hosting</a></li>
+            <li><a href="">Domain Names</a></li>
+            <li><a href="">SSL</a></li>
+            <li><a href="">Affiliates</a></li>
+            <li><a href="">Support</a></li>
+              
+        </div>
+    </div>
+        
+    </div> -->
+             <!-- mobile-nav and head ends here -->
+    <div class="header">
+        <div class="section">
+            <h1>Wordpress</h1>
+            <h2>Managed WordPress Hosting</h2>
+            <p1>– From as low as N1,500/m</p1>
+                <br>
+            <p2>
+                Turbo Fast, Automatic Updates, Free SSL, Daily & Weekly Backups.
+            </p2>
+                <br>
+                <p3>
+                    No Setup Fee!
+                </p3>
+
+               
+                <button type="button">VIEW WORDPRESS PACKAGES</button>
+                 
+                <div class="circle">
+                    <box-icon type='solid' name='circle'></box-icon>
+                </div>
+
+        </div>
+        <div class="picture">
+            <img src="https://www.qservers.net/wp-content/themes/qservers/img/slides/slide-img4_5.png" alt="">
+        </div>
+    </div>
+        
+<main>
+
+    <div class="section2">
+        <h1>Domain Search</h1>
+
+        <div class="container">
+            <form>
+                <input type="text" placeholder="www.mydomain.com">
+
+                <div class="button">
+                    <button type="submit"><span class="material-symbols-outlined">
+                        search
+                        </span>Search</button>
+                </div>
+        
+            </form>
+        
+            
+        </div>
+        <hr>
+        <div class="section3">
+            <h1>Our Services</h1>
+        <p>Domain Name Registration, Web Hosting, SSL Certificates & Website Development</p>
+
+        </div>
+         
+    </div>
+    <div class="cards">
+        <div class="box">
+            <div class="image">
+                <img src="https://www.qservers.net/wp-content/themes/qservers/img/hostingplans/domains.png" width="55%" alt="">
+            </div>
+            <div class="article1">
+                <h2>DOMAIN NAMES</h2>
+            </div>
+            <div class="article2">
+                <h4>Domains from just</h4>
+                    <div class="number">
+                    <h1><p>N</p>1,100</h1>
+                    </div>
+                    <h3>per year</h3>
+            </div>
+            <div class="article3">
+                <p>Secure your online identity today.Even if you are not ready to build a website,you can reserve your name so it’s ready when you need it.</p>
+            </div>
+            <div class="button2">
+                <button type="submit"><span class="material-symbols-sharp">
+                    keyboard_double_arrow_right
+                    </span>Find out More</button>
+            </div>
+            
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src="https://www.qservers.net/wp-content/themes/qservers/img/hostingplans/hosting.png" width="55%" alt="">
+            </div>
+            <div class="article1">
+                <h2>WEB HOSTING</h2>
+            </div>
+            <div class="article2">
+                <h4>Web Hosting</h4>
+                    <div class="number">
+                    <h1><p1>N</p1>900</h1>
+                    </div>
+                    <h3>per month</h3>
+            </div>
+            <div class="article3">
+                <p>Our web hosting is great for static websites, database-driven content management systems, and custom applications.</p>
+            </div>
+            <div class="button2">
+                <button type="submit"><span class="material-symbols-sharp">
+                    keyboard_double_arrow_right
+                    </span>Find out More</button>
+            </div>
+            
+        </div>
+        
+        <div class="box">
+            <div class="image">
+                <img src="https://www.qservers.net/wp-content/themes/qservers/img/hostingplans/ssl.png" width="55%" alt="">
+            </div>
+            
+            <div class="article1">
+                <h2>SSL CERTIFICATES</h2>
+            </div>
+    
+            <div class="article2">
+                <h4>SSL from just</h4>
+                    <div class="number">
+                    <h1><p>N</p>6,500</h1>
+                    </div>
+                    <h3>per year</h3>
+            </div>
+    
+            <div class="article3">
+                <p>Our SSL certificates ensure your website is encrypted & safe from any would-be cyber bullies. Affordable, secure & easy to install.</p>
+            </div>
+            <div class="button2">
+                <button type="submit"><span class="material-symbols-sharp">
+                    keyboard_double_arrow_right
+                    </span>Find out More</button>
+            </div>
+           
+        </div>
+    </div>
+          
+    <div class="section4">
+
+        <h1>Why choose us?</h1>
+        <p>The top reasons to choose us for your hosting needs</p>
+
+        <div class="cards2">
+            <div class="box2">
+                <div class="img">
+                    <img src="https://www.qservers.net/wp-content/themes/qservers/img/about/icon_support.png" alt="">
+                </div>
+                <div class="article4">
+                    <h2>SUPPORT</h2>
+                </div>
+                <div class="article5">
+                    <p>We’ve got an awesome, responsive team that’s here 24/7 to give you helpful website advice. And, you can contact them any way you’d like: phone, chat or, ticket! Whether you’ve got an issue with your site, or just a simple question, we’re here to help!</p>
+                </div>
+            </div>
+            <div class="box2">
+                <div class="img">
+                    <img src="https://www.qservers.net/wp-content/themes/qservers/img/about/icon_uptime.png" alt="">
+                </div>
+                <div class="article4">
+                    <h2>UPTIME</h2>
+                </div>
+                <div class="article5">
+                    <p>Your website and applications are essential when it comes to the success of your business.At QServers we know that if your network or servers are down,you are losing revenue and opportunities.That’s why we provide a 99.9% server uptime for your site.</p>
+                </div>
+            </div>
+            <div class="box2">
+                <div class="img">
+                    <img src="https://www.qservers.net/wp-content/themes/qservers/img/about/icon_scalable.png" alt="">
+                </div>
+                <div class="article4">
+                    <h2>SCALABLE</h2>
+                </div>
+                <div class="article5">
+                    <p>As your organization grows, technology should grow together to suit your needs. So choose the right plan to suit you and your company’s needs for today and be covered for tomorrow when the needs arises.</p>
+                </div>
+            </div>
+            <div class="box2">
+                <div class="img">
+                    <img src="https://www.qservers.net/wp-content/themes/qservers/img/about/icon_backup.png" alt="">
+                </div>
+                <div class="article4">
+                    <h2>DATA BACKUP</h2>
+                </div>
+                <div class="article5">
+                    <p>We provide daily/weekly remote backups of all your data for continuous data protection. Our RAID level 1 storage ensures that your data are completely mirrored and protected against hardware failure.</p>
+                </div>
+            </div>
+    
+    </div>
+
+
+    </div>
+
+    <div class="section5">
+        <h1>What do our customers think?</h1>
+        <div class="hr">
+          <hr>
+        </div>
+        <p>Don’t just take our word for it. Find out what real customers are saying.</p>
+    </div>
+    <div class="card3">
+        <div class="main-box3">
+            <div class="box3">
+                <div class="box3-partOne">
+                    <div class="box3Div">
+                        <div class="image">
+                            <img src="https://qservers.ng/wp-content/uploads/2022/12/testimonial_google_icon_white.png" alt="">
+                        </div>
+                        <div class="article6">
+                            <h3>"Good service experience, good customer care help line, server up-time is excellent"
+                            </h3>
+                        </div>
+                    </div>
+
+                <div class="ayo">
+                    <h4>Ayodele Balogun</h4>
+                    <h5>1st Febuary, 2023</h5>
+                </div>
+                    <a href="#">Read more testimonials</a>
+                 </div>
+            </div>
+        </div>
+        
+        <div class="box4">
+            <h2>Awards</h2>
+        </div>
+    
+    </div>
+     <hr>
+        <div class="clients">
+            <div class="images">
+
+                <div class="left-icon">
+                    <span class="material-symbols-outlined">
+                            chevron_left
+                            </span>
+                    </div>
+
+                    <div class="redeemed">
+                    <img src="https://www.qservers.net/wp-content/themes/qservers/img/clients/logo/client_7.png" width="70%" alt="">
+                </div>
+
+                <div class="NTA">
+                    <img src="https://www.qservers.net/wp-content/themes/qservers/img/clients/logo/client_8.png" width="70%" alt="">
+                </div>
+
+                <div class="bet">
+                    <img src="https://www.qservers.net/wp-content/themes/qservers/img/clients/logo/client_1.png" width="70%" alt="">
+                </div>
+
+                <div class="VLA">
+                    <img src="https://www.qservers.net/wp-content/themes/qservers/img/clients/logo/client_2.png" width="70%" alt="">
+                </div>
+                
+                <div class="ebony">
+                    <img src="https://www.qservers.net/wp-content/themes/qservers/img/clients/logo/client_3.png" width="70%" alt="">
+                </div>
+
+                <div class="christ">
+                    <img src="https://www.qservers.net/wp-content/themes/qservers/img/clients/logo/client_4.png" width="70%" alt="">
+                </div>
+                <div class="right-icon">
+                    <span class="material-symbols-outlined">
+                        chevron_right
+                        </span>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <div class="bottom">
+            <div class="top">
+                <div class="part1">
+                    <div class="house">
+                        <span class="material-symbols-outlined">
+                            house
+                            </span>
+                        </div>
+                            <div class="home">
+                                <p>HOME</p>
+                            </div>
+                </div>
+
+                <div class="part2">
+                    <div class="master">
+                        <img src="https://qservers.ng/wp-content/themes/qservers/img/payment-icons/mastercard.png" alt="">
+                    </div>
+    
+                    <div class="visa">
+                        <img src="https://qservers.ng/wp-content/themes/qservers/img/payment-icons/visa.png" alt="">
+                    </div>
+    
+                    <div class="inter">
+                        <img src="https://qservers.ng/wp-content/themes/qservers/img/payment-icons/interswitch_2.png" alt="">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="end">
+                <div class="wrap1">
+                    <div class="text">
+                        <h2>Hosting</h2>
+                    </div>
+                    <div class="word">
+                        <p><span class="material-symbols-outlined">
+                            keyboard_double_arrow_right
+                            </span>Website Hosting</p>
+                    </div>
+        
+                    <div class="word">
+                        <p><span class="material-symbols-outlined">
+                            keyboard_double_arrow_right
+                            </span>Cloud VPS Hosting</p>
+                    </div>
+                </div>
+                
+                <div class="wrap2">
+                    <div class="text">
+                        <h2>Services</h2>
+                    </div>
+        
+                    <div class="word">
+                        <p><span class="material-symbols-outlined">
+                            keyboard_double_arrow_right
+                            </span>Domain Names</p>
+                    </div>
+        
+                    <div class="word">
+                        <p><span class="material-symbols-outlined">
+                            keyboard_double_arrow_right
+                            </span>SSL Certificates</p>
+                    </div>
+                </div>
+                
+                <div class="wrap3">
+                    <div class="text">
+                        <h2>Company</h2>
+                    </div>
+        
+                    <div class="word">
+                        <p><span class="material-symbols-outlined">
+                            keyboard_double_arrow_right
+                            </span>About Us</p>
+                    </div>
+        
+                    <div class="word">
+                        <p><span class="material-symbols-outlined">
+                            keyboard_double_arrow_right
+                            </span>F.Q.A's</p>
+                    </div>
+        
+                    <div class="word">
+                        <p><span class="material-symbols-outlined">
+                            keyboard_double_arrow_right
+                            </span>Our Partners</p>
+                    </div>
+        
+                    <div class="word">
+                        <p><span class="material-symbols-outlined">
+                            keyboard_double_arrow_right
+                            </span>Payment Options</p>
+                    </div>
+                </div>
+                
+                <div class="wrap4">
+                    <div class="text">
+                        <h2>Clients</h2>
+                    </div>
+        
+                    <div class="word">
+                        <p><span class="material-symbols-outlined">
+                            keyboard_double_arrow_right
+                            </span>Login</p>
+                    </div>
+        
+                    <div class="word">
+                        <p><span class="material-symbols-outlined">
+                            keyboard_double_arrow_right
+                            </span>Register</p>
+                    </div>
+        
+                    <div class="word">
+                        <p><span class="material-symbols-outlined">
+                            keyboard_double_arrow_right
+                            </span>Affiliates</p>
+                    </div>
+        
+                    <div class="word">
+                        <p><span class="material-symbols-outlined">
+                            keyboard_double_arrow_right
+                            </span>Announcements</p>
+                    </div>
+        
+                    <div class="word">
+                        <p><span class="material-symbols-outlined">
+                            keyboard_double_arrow_right
+                            </span>Knowledgebase</p>
+                    </div>
+                </div>
+
+                <div class="wrap5">
+                    <div class="text">
+                        <h2>Manage</h2>
+                    </div>
+        
+                    <div class="word">
+                        <p><span class="material-symbols-outlined">
+                            keyboard_double_arrow_right
+                            </span>View Emails</p>
+                    </div>
+        
+                    <div class="word">
+                        <p><span class="material-symbols-outlined">
+                            keyboard_double_arrow_right
+                            </span>View Tickets</p>
+                    </div>
+        
+                    <div class="word">
+                        <p><span class="material-symbols-outlined">
+                            keyboard_double_arrow_right
+                            </span>View Invoices</p>
+                    </div>
+        
+                    <div class="word">
+                        <p><span class="material-symbols-outlined">
+                            keyboard_double_arrow_right
+                            </span>Products &Services</p>
+                    </div>
+        
+                    <div class="word">
+                        <p><span class="material-symbols-outlined">
+                            keyboard_double_arrow_right
+                            </span>Domain Management</p>
+                    </div>
+                </div>
+                
+                <div class="wrap6">
+                    <div class="text">
+                        <h2>Legal</h2>
+                    </div>
+        
+                    <div class="word">
+                        <p><span class="material-symbols-outlined">
+                            keyboard_double_arrow_right
+                            </span>Privacy</p>
+                    </div>
+        
+                    <div class="word">
+                        <p><span class="material-symbols-outlined">
+                            keyboard_double_arrow_right
+                            </span>Terms of Services</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+
+            <div class="last-part">
+                <div class="last">
+                    <div class="picture">
+                        <img src="https://qservers.ng/wp-content/themes/qservers/img/logo-footer.png" width="17%" alt="">
+                    </div>
+        
+                    <div class="last-word">
+                        <h6>QSERVERS NETWORK LIMITED - © 2022 - ALL RIGHTS RESERVED.</h6>
+                    </div>
+        
+                    <div class="last-word">
+                        <h6>11 ADELEKE STR, OFF ALLEN AVENUE. IKEJA.</h6>
+                    </div>
+        
+                    <div class="last-word">
+                        <h6> SALES : 08120800799. TECH : 08187881181, 09094786149. EMAIL : SUPPORT@QSERVERS.NET</h6>
+                    </div>
+                
+                </div>
+
+            </div>
+        </footer>
+        <div class="backup">
+            <div class="icon">
+                <a href=""><span class="material-symbols-outlined">
+                    arrow_circle_up
+                    </span></a>
+            </div>
+        </div>
+
+    </main>
+
+            
+</body>
+</html>
